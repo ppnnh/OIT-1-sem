@@ -1,0 +1,136 @@
+<html>
+<style>
+    body {
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы. */
+    padding:0px;
+    /* Задаю шрифт. */
+    font: 14px 'Verdana';
+}
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+}
+ul:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.mmenuu > li {
+    /* Задаю выравнивание и позиционирование. */
+    float: left;
+    /* Считаем координаты относительно исходного места*/
+    position: relative;
+}
+ul.mmenuu > li > a {
+    /* Делаю элементы блочными: */
+    display: block;
+    /* Задаю белый цвет. */
+    color: #fff;
+    /* Задаю отступ 10px. */
+    padding: 10px;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю цвет. */
+    background-color: #bd72e9;
+}
+ul.mmenuu > li > a:hover {
+    /* Задаю цвет при наведении. */
+    background-color: #da7ef1;
+}
+ul.ssubmenuu {
+    position: absolute;
+    width: 240px;
+    top: 37px;
+    left:0px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    background-color: white;
+}
+ul.ssubmenuu > li {
+    /* Блочное расположение элементов*/
+    display: block;
+}
+ul.ssubmenuu > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+    color: #ffffff;
+    /* Еще цвет. */
+    background-color: #ee9ed3;
+}
+ul.ssubmenuu > li > a:hover {
+    /* Цвет бэкграунда при наведении. */
+    background-color: #be059f;
+    /* Задаю подчеркивание*/
+    text-decoration: underline;
+}
+ul.mmenuu > li:hover > ul.ssubmenuu {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+</style>
+<body>
+	
+    <ul class="mmenuu">
+        
+        <li><a href=#>лаб1</a>
+            <ul class="ssubmenuu">
+                <li><a href="лаба1/лаба1.1.html">1 страница</a></li>
+                <li><a href="лаба1/лаба1.2.html">2 страница</a></li>
+            </ul>
+        </li>
+        <li><a href=#>лаб2</a>
+            <ul class="ssubmenuu">
+                <li><a href="лаба2/лаба2.1.html">1 страница</a></li>
+                <li><a href="лаба2/лаба2.2.html">2 страница</a></li>
+            </ul>
+        </li>
+        <li><a href=#>лаб3</a>
+            <ul class="ssubmenuu">
+                <li><a href="лаба3/лаба3.1.html">1 страница</a></li>
+                <li><a href="лаба3/лаба3.2.html">2 страница</a></li>
+            </ul>
+        </li>
+        <li><a href=#>лаб4</a>
+            <ul class="ssubmenuu">
+                <li><a href="лаба4/лаба4.1 с менюшкой.html">1 страница</a></li>
+                <li><a href="лаба4/лаба4.2.html">2 страница</a></li>
+                <li><a href="лаба4/лаба4.3.html">3 страница</a></li>
+                <li><a href="лаба4/4лаба1.html">1 задание</a></li>
+                <li><a href="лаба4/4лаба2.html">2 задание</a></li>
+                <li><a href="лаба4/4лаба3.html">3 задание</a></li>
+            </ul>
+        </li>
+        <li><a href=#>лаб5</a>
+            <ul class="ssubmenuu">
+                <li><a href="лаба5/лаба5.html">1 страница</a></li>
+            </ul>
+        </li>
+        <li><a href=#>лаб6</a>
+            <ul class="ssubmenuu">
+                <li><a href="лаба6/лаба6.1.html">машинка</a></li>
+                <li><a href="лаба6/лаба6.2.html">круг</a></li>
+                <li><a href="лаба6/лаба6.3.html">снег</a></li>
+                <li><a href="лаба6/лаба6пример1.html">1 пример</a></li>
+                <li><a href="лаба6/лаба6пример2.html">2 пример</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

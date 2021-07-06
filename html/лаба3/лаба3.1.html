@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>Моя первая страница</title>
+
+<link rel="stylesheet"  href="лаба2.css">
+<style type="text/css">
+body {
+    background: #c7b;
+}
+.k {
+    color:rgb(28, 31, 31);
+    text-align: justify;
+    letter-spacing: 1mm;
+    word-spacing: 3mm;
+    text-decoration: overline;
+    font-size: 11mm;
+    font-style: oblique;
+    font-weight: 200;
+}
+.o {
+    color: rgb(24, 61, 52);
+    text-align: right;
+    letter-spacing: 2mm;
+    word-spacing: 4mm;
+    text-decoration: underline;
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: 600;
+}
+.m {
+    color: #b700ff;
+    text-align: left;
+    letter-spacing: 3mm;
+    word-spacing: 5mm;
+    text-decoration: blink;
+    font-size: 50px;
+    font-style: inherit;
+    font-weight: 800;
+}
+#o { color:darkviolet;
+font-family:'gill sans';
+text-decoration: overline;}
+#m { color:rgb(0, 99, 112);
+font-family:'gill sans';
+text-decoration: overline;}
+
+a:link {
+    color: #162f5c; 
+    border-bottom: 1px dashed; 
+  }
+  a:visited {
+    color: #f19472;
+  }
+  a:hover {
+    color: #d6c914; 
+    border-bottom: .07em solid;
+  }
+  a:active {
+    color: #eb39a6; 
+    border-bottom: 1px dashed;
+  }
+.u1 {
+    list-style-type : lower-roman;
+    font-family:'Times New Roman'; 
+    color : rgb(126, 87, 253);
+    font-size:19mm; 
+    font-style:italic;
+    }
+.u2 {
+    list-style-type :lower-alpha;
+    font-family:georgia;
+    color : rgb(118, 224, 19);
+    font-size:21mm; 
+    font-style:normal;
+    }
+.u3 {
+    list-style-type : lower-greek;
+    color : rgb(221, 129, 144); 
+    font-style:italic;
+    font-family:Arial;
+    font-size:22mm;
+    }  
+.u4 {
+list-style-image: url("marker.png"); 
+}  
+
+table { 
+    color: rgb(63, 4, 4);
+    width: 100%;
+    height: 85%;
+    border: 10px double black;
+    border-collapse: separate;
+    text-align: center;
+    font-family:fantasy;
+    font-size:10mm;
+    font-style:initial;
+        }
+th {
+text-align: right;
+vertical-align:top;
+border: 1px solid black;
+}
+td { 
+padding: 6px;
+border: 1px solid black;
+}   
+b:first-child {
+color: lime;
+background-color: black;
+padding: 5px;
+        }
+p:first-letter
+{
+font-family: "Times New Roman", Times, serif;
+font-size: 200%;
+border: 1px solid red; 
+}
+p:first-line {
+text-decoration:underline;
+}
+f:before{
+content:"студентка I курса "
+} 
+f:after{
+content:" проживающая по адресу ул.Белорусская, 21, к.606, "
+}
+.m {
+    display: block;
+    background-color:rgba(93, 253, 45, 0.479);
+    width: 40px;
+      top: 37px;
+      left:0px;
+      color: black;
+  }
+ 
+</style>
+</head>
+<body bgcolor="yellow" align="justify">
+<h1 align="center">Я <f>, <a href="лаба3.2.html">Буранко Валерия Дмитриевна</a>,</f> изучаю <font color="red">HTML</font> и CSS</h1>
+<p><h2>Цитаты</h2></p></body>
+
+<p><h3>Абзац 1</h3></p>
+<p class="k">Вселенная знает, как будет <span style="color:firebrick; font-weight: bold;">лучше</span></p>
+<p><h3>Абзац 2</h3></p>
+<p class="o">Используй тот <b>талант</b>, что <span id="o">у тебя есть</span>: если бы в лесу пели только те птицы, что поют лучше всех, там было бы очень тихо…</p>
+<p><h3>Абзац 3</h3></p>
+<p class="m">Глубокая река даже <span id="m">не замечает</span>, что в нее кинули камень</font> </p>
+
+<b><h2>Elemets</h2></b>
+<ol type="1"><li>element 1</li>
+    <ul class="u1"><li>element 1.1</li>
+    <li>element 1.2</li></ul>
+<li>element 2</li>
+    <ul class="u2"><li>element 2.1</li>
+        <li>element 2.2</li>
+        <li>element 2.3</li></ul> 
+<li>element 3</li>
+    <ul class="u3"><li>element 3.1</li>
+        <li>element 3.2</li></ul> 
+     <ul class ="u4">
+            <li>Элемент 4.1</li>
+            <li>Элемент 4.2</li>
+        </ul>
+</ol>
+
+<h2>Таблица</h2>
+<table class="tabl">
+    <td>ФИО</td> <td colspan="3"><a href="лаба3.2.html">Буранко Валерия Дмитриевна</a></td>
+    <tr>
+        <td>Своё фото</td> <td colspan="3">Адрес: ул.Белорусская, д.21, ком.606</td>
+    </tr>
+    <tr>
+        <td rowspan="6">1 семестр<p> 2020/2021</p><p> уч.года</p></td> 
+         <td>Дата</td> 
+         <td>Предмет</td>
+         <td>Оценка</td>
+    </tr>
+    <tr>
+         <td>31.12.2020</td> 
+         <td>ОАиП</td> 
+         <td>9</td>
+    </tr>
+    <tr>
+         <td>05.01.2021</td> 
+         <td>Физика</td>
+         <td>9</td>
+    </tr>
+    <tr>
+         <td>11.01.2021</td> 
+         <td>ОИТ</td> 
+         <td>9</td>
+    </tr>
+    <tr>
+         <td>16.01.2021</td> 
+         <td>Математика</td> 
+         <td>10</td>
+    </tr>
+    <tr>
+         <td>22.01.2021</td> 
+         <td>АЛОЦВМ</td>
+         <td>9</td>
+    </tr>
+</table>
+ <p class="m"><a href="C:\Users\Lenovo\Desktop\ОИТ лабы\html\итоговаялаба.html">назад</a></p>
+</body>
+</html>
